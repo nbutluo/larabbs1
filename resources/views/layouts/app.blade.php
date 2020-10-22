@@ -11,24 +11,22 @@
   <title>@yield('title','LaraBBS') - Laravel 进阶教程</title>
 
   <!-- Styles -->
-  <link  href="{{ mix('css/app.css') }}" rel="stylesheet">
+  <link href="{{ mix('css/app.css') }}" rel="stylesheet">
 
 </head>
 <body>
-  <div class="app" class="{{ route_class() }}-page">
-    @include('layouts._header')
+<div class="app" class="{{ route_class() }}-page">
+  @include('layouts._header')
 
-    <div class="container">
-
-      @include('shared._messages')
-      @yield('content')
-
-    </div>
-
-    @include('layouts._footer')
+  <div class="container">
+    @include('shared._messages')
+    @yield('content')
   </div>
 
-  <!-- Scripts -->
-  <script src="{{ mix('js/app.js') }}"></script>
+  @include('layouts._footer')
+</div>
+
+<!-- Scripts -->
+<script src="{{ mix('js/app.js') }}"></script>
 </body>
 </html>

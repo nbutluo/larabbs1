@@ -17069,3 +17069,10 @@ readers do not read off random characters that represent icons */
   font-weight: 400;
 }
 
+.register-page img.captcha {
+  cursor: pointer;
+  border: 1px solid #ced4da;
+  border-radius: 2px;
+  padding: 1px;
+}
+
